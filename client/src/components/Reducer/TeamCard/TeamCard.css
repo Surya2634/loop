@@ -1,0 +1,20 @@
+.team-circle-img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+.person-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #30dd8a;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.person-designation {
+  font-size: 13px;
+}
+@media(max-width:1024px){
+  .person-name{
+    font-size: 12px !important;
+    text-align: justify !important;
+  }
+}

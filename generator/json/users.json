@@ -1,0 +1,22 @@
+[
+  {
+    "_id": {
+      "$oid": "62171472be7c2853d9e0e6ed"
+    },
+    "regno": "CECS30",
+    "name": "Gokul",
+    "email": "gokul@gmail.com",
+    "password": "$2a$08$1/xiD6tvJaZ1BpakJAHVHOzJsSjtPUWv.PdLF56NW7TvuEEuI9go.",
+    "role_id": { "$oid": "616fb4cd25e36afa4973810d" },
+    "gender_id": { "$oid": "616fb63f73b5bdd8ff296241" },
+    "stream_id": { "$oid": "616fb66e73b5bdd8ff296247" },
+    "batch_id": { "$oid": "61af35357a7a73c8776491ca" },
+    "course_id": { "$oid": "616fb7f95f871e16eac7d8d0" },
+    "college_id": { "$oid": "616fb6c073b5bdd8ff296251" },
+    "phone_no": 1234567890,
+    "created_at": { "$date": "2021-12-07T10:19:32.882Z" },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

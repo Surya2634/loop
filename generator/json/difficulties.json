@@ -1,0 +1,37 @@
+[
+  {
+    "_id": {
+      "$oid": "616fba9fa9a3ffa5f6b0de01"
+    },
+    "level": "easy",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fbaa4a9a3ffa5f6b0de03"
+    },
+    "level": "medium",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fbaa9a9a3ffa5f6b0de05"
+    },
+    "level": "hard",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fbab3a9a3ffa5f6b0de07"
+    },
+    "level": "advanced",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fbab8a9a3ffa5f6b0de09"
+    },
+    "level": "expert",
+    "__v": 0
+  }
+]

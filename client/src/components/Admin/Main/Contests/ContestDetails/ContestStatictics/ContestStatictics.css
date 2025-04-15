@@ -1,0 +1,66 @@
+.statistics-nav > .inner-stat-nav {
+  margin: 1px;
+  padding: 7px;
+}
+.inner-stat-nav {
+  background: #21a366;
+  color: #fff;
+  text-align: center;
+}
+.stats > .stats-detail {
+  text-align: center;
+  padding: 10px;
+}
+.top-participants {
+  color: #21a366;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-scorer span {
+  font-size: 16px;
+  color: #21a366;
+  font-weight: 600;
+}
+.top-scorer {
+  color: #21a366;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.score-point {
+  font-weight: 700;
+  margin-top: 2px;
+}
+.top-part {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.submission-count {
+  color: #21a366;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .stats-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .stats-left {
+    min-width: 100%;
+    order: 2;
+  }
+  .stats-right {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    order: 1;
+  }
+  .top-part {
+    width: 50%;
+  }
+}

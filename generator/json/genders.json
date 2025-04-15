@@ -1,0 +1,38 @@
+[
+  {
+    "_id": {
+      "$oid": "616fb63f73b5bdd8ff296241"
+    },
+    "name": "male",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.336Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb64473b5bdd8ff296243"
+    },
+    "name": "female",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.336Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb64a73b5bdd8ff296245"
+    },
+    "name": "others",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.336Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

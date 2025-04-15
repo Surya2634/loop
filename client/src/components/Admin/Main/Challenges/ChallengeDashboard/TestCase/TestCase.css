@@ -1,0 +1,12 @@
+.fa-edit,
+.fa-trash {
+  font-size: 18px;
+  /* color: #005e21; */
+  cursor: pointer;
+}
+
+.test-card {
+  box-shadow: 0 0 10px rgb(235, 235, 235);
+  border-radius: 10px;
+  overflow-y: scroll;
+}

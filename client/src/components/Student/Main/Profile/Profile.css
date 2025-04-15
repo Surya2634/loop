@@ -1,0 +1,9 @@
+.btn-save,
+.btn-cancel {
+  background-color: #0b7e5b !important;
+  color: white !important;
+}
+.go-back {
+  top: 0 !important;
+  left: 0;
+}

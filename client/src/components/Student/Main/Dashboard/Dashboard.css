@@ -1,0 +1,102 @@
+.user-name {
+  font-size: 16px;
+  font-weight: bolder !important;
+  color: #39b98f;
+}
+.register-no {
+  color: #000;
+  font-weight: 500;
+}
+.header-dashboard {
+  margin-top: 15px;
+}
+.border-header {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+.border-header-1 {
+  border-radius: 15px;
+}
+.header-article {
+  font-size: 32px;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #63737a;
+}
+.span-arrow {
+  color: #39b98f;
+  font-weight: 600;
+}
+.problem-article,
+.header-title {
+  font-size: 32px;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: rgb(4, 45, 99);
+}
+.problem-span {
+  color: #000;
+  font-weight: 600;
+}
+.arrow-span {
+  color: white;
+  font-weight: 600;
+}
+.dash-title {
+  font-size: 28px;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  /* font-weight: 700; */
+  letter-spacing: 0.8px;
+  color: #0b7e55;
+}
+.dash-title-category {
+  font-size: 30px;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #0b7e55;
+}
+.dash-greet {
+  color: #000;
+  font-weight: 100;
+}
+.dashboard {
+  height: 100vh !important;
+}
+
+.name-title {
+  font-weight: bolder;
+}
+
+.card-title {
+  color: #469667;
+  font-weight: 800;
+}
+.what-we-do-card {
+  width: 250px !important;
+  border: none;
+  text-align: center;
+}
+.img-one {
+  border: 5px solid #ffc700;
+}
+.dash-footer-input {
+  background-color: #fff !important;
+  color: #000;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+.dash-footer-input:hover,
+.dash-footer-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.dashboard-footer {
+  background-color: #b0d7c0;
+  border-radius: 30px;
+  height: 190px;
+}

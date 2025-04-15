@@ -1,0 +1,62 @@
+[
+  {
+    "_id": {
+      "$oid": "616fb66e73b5bdd8ff296247"
+    },
+    "name": "B.E",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.345Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb67973b5bdd8ff296249"
+    },
+    "name": "B.Tech",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.345Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb68173b5bdd8ff29624b"
+    },
+    "name": "M.E",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.345Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb68973b5bdd8ff29624d"
+    },
+    "name": "MCA",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.345Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb68c73b5bdd8ff29624f"
+    },
+    "name": "MBA",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.345Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

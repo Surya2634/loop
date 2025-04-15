@@ -1,0 +1,131 @@
+.problem-title-head {
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.badge-easy {
+  font-size: 11px;
+  color: #05a04b;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.problem-badge-medium {
+  height: 25px !important;
+  width: max-content;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: #fdf2d1;
+}
+.badge-medium {
+  font-size: 11px;
+  color: #fcc634;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.problem-badge-difficult {
+  height: 25px !important;
+  width: max-content;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: #fce7e0;
+}
+.badge-difficult {
+  font-size: 11px;
+  color: #ff7417;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.problem-badge-easy {
+  height: 25px !important;
+  width: max-content;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: #d2f7cf;
+}
+.problem-header .timer {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.program-pills .program-link.active,
+.program-pills .show > .program-link {
+  color: #1b75fd;
+  background-color: #e7f6ff;
+  border-radius: 4px;
+}
+.program-item .program-link {
+  height: 30px !important;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 500;
+  color: rgb(133, 133, 133);
+}
+.problem-badge-company {
+  height: 25px !important;
+  width: max-content;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: #fde6ff;
+}
+.badge-company {
+  font-size: 11px;
+  color: #f80ef8;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.constraints-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+.constraints-highlight {
+  color: rgb(7, 154, 165);
+  background-color: rgb(225, 248, 255);
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid rgb(129, 175, 179);
+}
+.constraints-dot {
+  font-size: 5px;
+  position: relative;
+  top: -5px;
+  color: rgb(128, 128, 128);
+}
+.select-theme {
+  margin-bottom: 6px;
+}
+
+.problem-title-head {
+  color: black;
+  font-weight: bolder;
+}
+
+.problem-state,
+.ip,
+.op {
+  color: #05a04b;
+}
+.color-highlight {
+  color: #05a04b;
+  font-size: 18px;
+}
+
+.ip-highlight,
+.op-highlight {
+  font-size: 20px;
+  color: #00c3ff;
+}
+.program-score {
+  border-radius: 50%;
+  background-color: #05a04b;
+  color: white;
+}
+
+.score-card {
+  color: #05a04b;
+  font-weight: bolder;
+}

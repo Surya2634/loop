@@ -1,0 +1,22 @@
+.create-con button {
+  background: #21a366;
+  color: #fff;
+}
+.upcoming-header {
+  color: #000;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #b0d7c0;
+  border-radius: 20px 20px 0px 0px;
+}
+.content-nav-title {
+  font-size: 17px;
+  color: #00511b;
+}
+.upcoming-task {
+  color: dodgerblue;
+}
+.upcoming-task i {
+  color: #00511b;
+}

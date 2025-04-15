@@ -1,0 +1,38 @@
+[
+  {
+    "_id": {
+      "$oid": "616fb6c073b5bdd8ff296251"
+    },
+    "name": "KSR College of Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.351Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb6cc73b5bdd8ff296253"
+    },
+    "name": "KSR College of Technology",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.351Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb70273b5bdd8ff296255"
+    },
+    "name": "KSR Institute for Engineering & Technology",
+    "created_at": {
+      "$date": "2021-10-20T06:24:45.351Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

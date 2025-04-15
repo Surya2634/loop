@@ -1,0 +1,21 @@
+.timer-span {
+  font-weight: 700 !important;
+  color: #39b98f;
+}
+.countdown-timer > .pop-span {
+  animation: pop 0.8s linear infinite;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 1200px) {
+  .timer-span {
+    font-size: 18px !important;
+    width: max-content;
+  }
+}

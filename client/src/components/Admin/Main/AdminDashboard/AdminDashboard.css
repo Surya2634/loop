@@ -1,0 +1,13 @@
+.dash-highlight {
+  border: 1px solid teal;
+}
+.user-count {
+  color: #155b39;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.user-span {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}

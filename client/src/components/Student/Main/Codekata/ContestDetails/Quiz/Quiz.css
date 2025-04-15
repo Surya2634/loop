@@ -1,0 +1,128 @@
+.question-outoff span {
+  font-size: 16px;
+}
+.Quiz-question-container {
+  height: 120vh;
+}
+hr {
+  background-color: rgb(226, 226, 226) !important;
+  width: 70% !important;
+  float: left;
+}
+.hr {
+  float: left;
+  width: 100%;
+}
+.question-outoff .question-order {
+  color: #00511b;
+}
+.question-up {
+  max-height: 254px;
+  overflow-y: scroll;
+}
+.numberCircle {
+  border-radius: 50%;
+  min-width: 30px !important;
+  height: 30px !important;
+  background: #39b98f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+}
+.que-path,
+.correct {
+  border-radius: 50%;
+  width: 35px;
+  padding: 5px;
+  height: 35px;
+  background: #b0d7c0;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+  border: none;
+  outline: none !important;
+}
+.correct {
+  background: #39b98f;
+  color: #fff;
+}
+.quizzes {
+  border: 1px solid #ccc;
+  border-radius: 18px;
+}
+.span-question {
+  font-size: 22px;
+  font-weight: 500;
+}
+.option-1,
+.correct-option {
+  width: 48%;
+  height: fit-content;
+  border: none !important;
+  border-radius: 10px;
+  background: #b0d7c0;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+}
+.option-1:focus,
+.correct-option:focus {
+  outline: none;
+}
+.correct-option {
+  background-color: #00511b;
+  color: #fff;
+  outline: none !important;
+}
+.timer-text {
+  font-weight: 600 !important;
+}
+.timer-hand {
+  font-size: 11px;
+  color: #39b98f;
+}
+.back-btn {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background: #39b98f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.back-btn .triangle {
+  position: relative;
+  top: 6px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid white;
+}
+.back-btn .halfcircle {
+  position: absolute;
+  height: 12px;
+  width: 15px;
+  top: 10px;
+  left: 8px;
+  border-radius: 50%;
+  border: 2px solid white;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(35deg);
+}
+@media (max-width: 1024px) {
+  .option-1,
+  .correct-option {
+    width: 100%;
+  }
+}
+
+.room-code {
+  background-color: #00511b;
+  color: #fff;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "616fb4cd25e36afa4973810d"
+    },
+    "name": "admin",
+    "created_at": {
+      "$date": "2021-10-20T06:18:51.507Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb4d625e36afa4973810f"
+    },
+    "name": "student",
+    "created_at": {
+      "$date": "2021-10-20T06:18:51.507Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

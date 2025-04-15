@@ -1,0 +1,418 @@
+====== LOGIN ======
+POST - http://localhost:5000/api/v1/login
+Request====
+body - {
+   "regno" : "CECS30",
+   "password" : "qwert"
+}
+
+Response====
+{
+  "username": "Sildra",
+  "role": "admin",
+  "email": "dhanush@gmail.com",
+  "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjE3NjNiMmRmMmU1Mjg5YmI2ODhjZTdiIiwicm9sZSI6ImFkbWluIiwicmVnbm8iOiJDRUNTMzAiLCJlbWFpbCI6ImRoYW51c2hAZ21haWwuY29tIiwiaWF0IjoxNjM3NDEzNTgyLCJleHAiOjE2Mzc0NTY3ODJ9.4WJkf81UijcoHLqBw2u6Cm12zcVMCOyIzHwbSmBDwl8",
+  "expiresIn": 12,
+  "message": "You are logged in!",
+  "success": true
+}
+
+====== USER ======
+POST - http://localhost:5000/api/v1/user/create
+Request====
+header : Authorization - token
+body : {
+   "regno" : "1813018",
+   "name" : "Gobinath",
+   "email" : "gobinath@gmail.com",
+   "gender_id" : "male",
+   "stream_id" : "B.E",
+   "course_id" : "Computer Science & Engineering",
+   "college_id" : "KSR College of Engineering",
+   "batch_id" : "2018-2022",
+   "phone_no" : 1234567890
+}
+Response====
+{
+  "code": 201,
+  "message": "New user created.",
+  "regno": "1813018"
+}
+
+GET - http://localhost:5000/api/v1/user/get?regno=1813019
+Request====
+header : Authorization - token
+
+Response====
+{
+  "userDetails": {
+    "_id": "616ff024475b604ae87cc614",
+    "regno": "1813019",
+    "name": "Gokul",
+    "email": "gokuls2781@gmail.com",
+    "role_id": "student",
+    "gender_id": "male",
+    "stream_id": "B.E",
+    "college_id": "KSR College of Engineering",
+    "course_id": "Computer Science & Engineering",
+    "phone_no": 8072939909,
+    "batch_id": "2018-2022"
+  },
+  "message": "User found",
+  "success": true
+}
+
+POST - http://localhost:5000/api/v1/user/update
+Request====
+header : Authorization - token
+body : {
+  "id" : "619903333f31b560f3c7f7b7",
+  "updateDetails" : {
+   "regno" : "1813018",
+   "name" : "Gobinath",
+   "email" : "gobinath@gmail.com",
+   "gender_id" : "male",
+   "stream_id" : "B.E",
+   "course_id" : "Computer Science & Engineering",
+   "college_id" : "KSR College of Engineering",
+   "batch_id" : "2018-2022",
+   "phone_no" : 1234567890
+  }
+}
+Response====
+{
+  "message": "User updated",
+  "success": true
+}
+
+POST - http://localhost:5000/api/v1/users/createAll
+Request====
+header : Authorization - token
+body : {
+  "id" : "619903333f31b560f3c7f7b7",
+  "updateDetails" : {
+   "regno" : "1813018",
+   "name" : "Gobinath",
+   "email" : "gobinath@gmail.com",
+   "gender_id" : "male",
+   "stream_id" : "B.E",
+   "course_id" : "Computer Science & Engineering",
+   "college_id" : "KSR College of Engineering",
+   "batch_id" : "2018-2022",
+   "phone_no" : 1234567890
+  }
+}
+Response====
+{
+  "message": "User updated",
+  "success": true
+}
+
+GET - http://localhost:5000/api/v1/users/getAll/?page=1&limit=10
+Request====
+header : Authorization - token
+query - page = 1, limit = 10
+Response====
+{
+  "modelCount": 3,
+  "total": 1,
+  "users": [
+    {
+      "_id": "619c6a284db72b0389151b1a",
+      "regno": "CECS30",
+      "name": "Sildra",
+      "email": "sildra@gmail.com",
+      "password": "$2a$08$F.sftHdR0HdYtP5CykG9j.xxw1/oowo7IHhZHgYPAhSpFgAw35kMa",
+      "role_id": "616fb4cd25e36afa4973810d",
+      "gender_id": "616fb63f73b5bdd8ff296241",
+      "stream_id": "616fb66e73b5bdd8ff296247",
+      "batch_id": "616ff024475b604ae87cc610",
+      "course_id": "616fb7f95f871e16eac7d8d0",
+      "college_id": "616fb6c073b5bdd8ff296251",
+      "phone_no": 8072939909,
+      "created_at": "2021-11-23T04:12:15.791Z",
+      "updated_at": null,
+      "deleted_at": null,
+      "__v": 0
+    }
+  ]
+}
+
+POST - http://localhost:5000/api/v1/contest/create
+Request====
+header : Authorization - token
+body : {
+  "name" : "Armstrong numbers",
+  "start_date" : "11-24-2021",
+  "end_date" : "11-25-2021",
+  "start_time" : "3:30",
+  "end_time" : "13:30"
+}
+Response====
+{
+  "message": "Contest created successfully",
+  "success": true
+}
+
+GET - http://localhost:5000/api/v1/contest/get?id=619c8903e14218efa19b5d4a&code=CESAJH
+Request====
+header : Authorization - token
+query - id = 619c8903e14218efa19b5d4a, code = 3E7FE4
+
+Response====
+{
+  "message": {
+    "_id": "619c8903e14218efa19b5d4a",
+    "code": "3E7FE4",
+    "name": "Armstrong numbers",
+    "start_date": "2021-11-23T22:00:00.000Z",
+    "end_date": "2021-11-25T08:00:00.000Z",
+    "start_time": "3:30",
+    "end_time": "13:30",
+    "duration": "1d 10h 0m 0s",
+    "created_at": "2021-11-23T05:58:44.580Z",
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+}
+
+POST - http://localhost:5000/api/v1/contest/update
+Request====
+header : Authorization - token
+body : {
+    "id" : "619c8903e14218efa19b5d4a",
+    "name" : "Armstrong Number",
+    "start_date" : "11-23-2021",
+    "end_date" : "11-23-2021",
+    "start_time" : "12:30",
+    "end_time" : "14:00"
+}
+Response====
+Contest updated.
+
+GET - http://localhost:5000/api/v1/contests/getAll?page=1&limit=10
+Request====
+header : Authorization - token
+query - page = 1, limit = 10
+Response====
+{
+  "modelCount": 3,
+  "total": 1,
+  "users": [
+    {
+      "_id": "619c6a284db72b0389151b1a",
+      "regno": "CECS30",
+      "name": "Sildra",
+      "email": "sildra@gmail.com",
+      "password": "$2a$08$F.sftHdR0HdYtP5CykG9j.xxw1/oowo7IHhZHgYPAhSpFgAw35kMa",
+      "role_id": "616fb4cd25e36afa4973810d",
+      "gender_id": "616fb63f73b5bdd8ff296241",
+      "stream_id": "616fb66e73b5bdd8ff296247",
+      "batch_id": "616ff024475b604ae87cc610",
+      "course_id": "616fb7f95f871e16eac7d8d0",
+      "college_id": "616fb6c073b5bdd8ff296251",
+      "phone_no": 8072939909,
+      "created_at": "2021-11-23T04:12:15.791Z",
+      "updated_at": null,
+      "deleted_at": null,
+      "__v": 0
+    }
+  ]
+}
+
+POST - http://localhost:5000/api/v1/quiz/create
+Request====
+header : Authorization - token
+body : {
+  "name" : "Java Quiz"
+}
+Response====
+{
+  "code": 201,
+  "message": "Java Quiz created."
+}
+
+GET - http://localhost:5000/api/v1/quiz/get?id=619cd9b1ab07a0a917503efd
+Request====
+header : Authorization - token
+query - id = 619cd9b1ab07a0a917503efd
+
+Response====
+{
+  "code": 200,
+  "message": "Quiz has been found.",
+  "quiz": {
+    "_id": "619cd9b1ab07a0a917503efd",
+    "name": "Java Quiz",
+    "total_mcqs": 0,
+    "created_at": "2021-11-23T09:53:17.085Z",
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+}
+
+POST - http://localhost:5000/api/v1/quiz/update
+Request====
+header : Authorization - token
+body : {
+    "id" : "619cd9b1ab07a0a917503efd",
+    "name" : "Java"
+}
+Response====
+{
+  "code": 200,
+  "message": "Quiz updated"
+}
+
+GET - http://localhost:5000/api/v1/quiz/all?id=619c8903e14218efa19b5d4a
+Request====
+header : Authorization - token
+query - id = 619c8903e14218efa19b5d4a
+
+Response====
+{
+  "code": 200,
+  "message": "Quizzes that are available",
+  "Quizzes": [
+    {
+      "_id": "619cd9b1ab07a0a917503efd",
+      "name": "Java",
+      "total_mcqs": 0,
+      "created_at": "2021-11-23T09:53:17.085Z",
+      "updated_at": null,
+      "deleted_at": null,
+      "__v": 0,
+      "contest_id": "619c8903e14218efa19b5d4a"
+    }
+  ]
+}
+
+POST - http://localhost:5000/api/v1/question/create
+Request====
+header : Authorization - token
+body : {
+  "type_id" : "mcq",
+  "quiz_id" : "619cd9b1ab07a0a917503efd",
+  "statement" : "Which method can be used to find the length of a string?",
+  "options" : {
+    "A" : "length()",
+    "B" : "len()",
+    "C" : "getLen()",
+    "D" : "getLength()",
+    "correctOption" : "A"
+  }
+}
+Response====
+MCQ created successfully.
+
+POST - http://localhost:5000/api/v1/question/create
+Request====
+header : Authorization - token
+body : {
+  "name" : "Addition",
+  "type_id" : "problem",
+  "statement" : "Sum of 2 numbers.",
+  "description" : "Find the sum of two numbers a, b?",
+  "input_format" : "1 2",
+  "output_format" : "3",
+  "constraints" : "0 <= a,b <= 10^7",
+  "difficulty_id" : "easy",
+  "max_score" : 5
+}
+Response====
+Challenge created successfully.
+
+GET - http://localhost:5000/api/v1/question/get?id=619cf733e262587cc1c6b6b6
+Request====
+header : Authorization - token
+query - id = 619cf733e262587cc1c6b6b6
+      - type = mcq
+Response====
+{
+  "code": 200,
+  "message": "MCQ is found",
+  "question": {
+    "id": "619cf733e262587cc1c6b6b6",
+    "statement": "Which method can be used to find the length of a string?"
+  },
+  "answer": {
+    "id": "619cf733e262587cc1c6b6b7",
+    "options": {
+      "A": "length()",
+      "B": "len()",
+      "C": "getLen()",
+      "D": "getLength()"
+    }
+  }
+}
+
+GET - http://localhost:5000/api/v1/question/get?id=61a0def8bb86a9bec986c1ba
+Request====
+header : Authorization - token
+query - id = 61a0def8bb86a9bec986c1ba
+      - type = problem
+Response====
+{
+  "code": 200,
+  "message": "Question found",
+  "question": {
+    "_id": "61a0def8bb86a9bec986c1ba",
+    "name": "Addition",
+    "type_id": {
+      "_id": "618917fdcac245267fb65bab",
+      "name": "problem"
+    },
+    "statement": "Sum of 2 numbers.",
+    "input_format": "1 2",
+    "output_format": "3",
+    "contraints": "0 <= a,b <= 10^7",
+    "difficulty_id": {
+      "_id": "616fba9fa9a3ffa5f6b0de01",
+      "level": "easy"
+    },
+    "max_score": 5,
+    "created_at": "2021-11-26T13:18:50.764Z",
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+}
+
+POST - http://localhost:5000/api/v1/question/update
+Request====
+header : Authorization - token
+body : {
+ "type" : "mcq"
+ "question_id" : "61a1bd7de191909d8f747de3",
+ "statement" : "Which method can be used to find the length of a string?",
+ "answer_id" : "61a1bd7de191909d8f747de4",
+ "options" : {
+     "A" : "length()",
+     "B" : "len()",
+     "C" : "getLength()",
+     "D" : "getLen()",
+     "correctOption" : "A"
+ }
+}
+Response====
+MCQ updated successfully.
+
+POST - http://localhost:5000/api/v1/question/update
+Request====
+header : Authorization - token
+body : {
+  "id" : "61a0def8bb86a9bec986c1ba",
+  "name" : "Addition",
+  "type" : "problem",
+  "statement" : "Sum of two numbers.",
+  "description" : "Find the sum of two numbers a, b?",
+  "input_format" : "1 2",
+  "output_format" : "3",
+  "contraints" : "0 <= a,b <= 10^7",
+  "difficulty_id" : "easy",
+  "max_score" : 10
+}
+Response====
+Challenge updated successfully.

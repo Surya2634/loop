@@ -1,0 +1,161 @@
+.side-bar {
+  height: 100vh !important;
+  min-width: 260px;
+  /* width: fit-content !important; */
+  /* width: 254px; */
+}
+
+@media (max-width: 992px) {
+  .side-bar {
+    height: 100vh !important;
+    min-width: 110px !important;
+  }
+}
+.hide-bar {
+  display: none !important;
+}
+.dash-li {
+  font-size: 18px;
+  color: black !important;
+  font-weight: 400;
+  border-radius: 50px;
+}
+.dash-icon {
+  color: black;
+  font-size: 18px;
+}
+
+@keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.dash-li:hover .shake {
+  animation-name: spaceboots;
+  animation-duration: 0.8s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: unset;
+  animation-timing-function: linear;
+}
+.home-active .dash-icon,
+.active-class .dash-icon {
+  color: #fff;
+}
+.home-active,
+.active-class {
+  width: 220px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff !important;
+  cursor: pointer;
+  height: 45px;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 0px 20px 0px 20px;
+}
+.home-active.color-11,
+.active-class.color-11 {
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.5);
+}
+.main-div {
+  overflow-y: scroll;
+  height: 100%;
+  /* height: 100vh; */
+}
+.side-nav {
+  border-radius: 0 50px 50px 0 !important;
+  background: rgb(253, 253, 253) !important;
+  box-shadow: -37px 37px 74px #e0e0e0, 37px -37px 74px #f7f7f7 !important;
+}
+.sidebar-logo {
+  top: 40px;
+}
+@media (max-width: 992px) {
+  .hide-span,
+  .footer-span {
+    display: none !important;
+  }
+  .home-active,
+  .active-class {
+    width: fit-content;
+  }
+  .dash-icon {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+}
+.sidebar-footer {
+  top: -40px;
+}
+
+@media (max-width: 992px) {
+  ul li .tooltip {
+    display: inline-block;
+    position: absolute;
+    background-color: #3cba92;
+    padding: 8px 15px;
+    border-radius: 3px;
+    left: 106px;
+    opacity: 0;
+    width: fit-content !important;
+    font-weight: 500;
+    visibility: hidden;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.5);
+  }
+  ul li .tooltip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -4px;
+    top: 10px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+  }
+
+  ul li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "_id": {
+      "$oid": "616fb7f95f871e16eac7d8d0"
+    },
+    "name": "Computer Science & Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb82d5f871e16eac7d8d2"
+    },
+    "name": "Electrical & Electronics Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb87c5f871e16eac7d8d4"
+    },
+    "name": "Electronics & Communication Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb89a5f871e16eac7d8d6"
+    },
+    "name": "Information Technology",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb8c45f871e16eac7d8d8"
+    },
+    "name": "Mechanical Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb8dd5f871e16eac7d8da"
+    },
+    "name": "Automobile Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb9155f871e16eac7d8dc"
+    },
+    "name": "Safety & Fire Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "616fb91b5f871e16eac7d8de"
+    },
+    "name": "Civil Engineering",
+    "created_at": {
+      "$date": "2021-10-20T06:32:08.387Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

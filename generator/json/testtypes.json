@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "618917e363dee00c4c115353"
+    },
+    "name": "mcq",
+    "created_at": {
+      "$date": "2021-11-08T12:28:17.393Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "618917fdcac245267fb65bab"
+    },
+    "name": "problem",
+    "created_at": {
+      "$date": "2021-11-08T12:28:44.671Z"
+    },
+    "updated_at": null,
+    "deleted_at": null,
+    "__v": 0
+  }
+]

@@ -1,0 +1,42 @@
+:root {
+  --body-bg: #f5f8ff;
+  --box-bg: #fff;
+  --input-bg: #f5f8ff;
+  --txt-color: #2f2d2f;
+  --txt-second-color: #ccc;
+  --border-color: #0b7e55;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.user-group-pill {
+  padding: 0 !important;
+  border: none !important;
+}
+.user-navlink {
+  font-size: 18px !important;
+  color: #2f2d2f !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 9px;
+}
+.active-user-pill {
+  background: #21a366 !important;
+  color: #fff !important;
+}
+.add-user-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.nav-button {
+  padding: 8px;
+  height: 50px !important;
+  width: 160px;
+  border: 1px solid #21a366 !important;
+}
+
+.drop-button {
+  border: 1px solid #0b7e55 !important;
+  background-color: none;
+  width: 160px;
+  height: 50px;
+}

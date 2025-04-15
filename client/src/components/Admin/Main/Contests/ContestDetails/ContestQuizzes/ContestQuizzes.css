@@ -1,0 +1,14 @@
+.quizzes-chip {
+  background: #21a366;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.text-highlight {
+  color: #21a366;
+}
+
+.btn-sucess {
+  background-color: #21a366 !important;
+  color: #fff !important;
+}

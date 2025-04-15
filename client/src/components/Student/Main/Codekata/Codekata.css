@@ -1,0 +1,30 @@
+#partitioned {
+  padding-left: 13px;
+  letter-spacing: 38px;
+  border: 0;
+  background-image: linear-gradient(
+    to left,
+    #33b689 80%,
+    rgba(236, 50, 50, 0) 0%
+  ) !important;
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  background-color: transparent;
+  width: 310px;
+  outline: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#divInner {
+  left: 0;
+  position: sticky;
+}
+
+#divOuter {
+  width: 290px;
+  overflow: hidden;
+}

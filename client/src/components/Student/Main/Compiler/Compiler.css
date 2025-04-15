@@ -1,0 +1,13 @@
+.compiler-container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.compile-button {
+  background-color: #1db954 !important;
+  color: white !important;
+}
+.output-box {
+  background: #000;
+  color: aliceblue !important;
+}

@@ -1,0 +1,44 @@
+.box {
+  width: fit-content;
+  height: 40px;
+  background-color: #21a366 !important;
+  position: relative;
+  font-size: 16px;
+}
+.list-group-item {
+  top: 8px;
+}
+.arrow-bottom .list-group-item {
+  background-color: #21a366;
+  color: #fff;
+}
+.box.arrow-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 45%;
+  color: #fff !important;
+  bottom: -12px;
+  border-top: 12px solid #21a366;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-bottom: none;
+}
+.edit-contest-li,
+.edit-contest-li:hover {
+  color: #000;
+  text-decoration: none;
+}
+.challenge-name {
+  color: #21a366;
+  font-weight: 900 !important;
+}
+.max-score {
+  background-color: #21a366;
+  color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px !important;
+}
+.fa-star {
+  color: rgb(173, 173, 15) !important;
+}

@@ -1,0 +1,11 @@
+.team{
+    color: #0ba360;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.team-page{
+    overflow-y: scroll;
+    height: 100vh;
+}
