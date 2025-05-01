@@ -77,11 +77,6 @@ const Login = (props) => {
   return (
     <div>
       <div className={ change ? "clip-content sign-up-mode" : "clip-content" }>
-        <div className="login-about-us d-flex align-items-center justify-content-center px-4 py-3">
-          <span className="copyright px-3">
-            Copyright©2025<span className="pr-2 pl-3">|</span>
-          </span>
-        </div>
         <div className="forms-cont">
           <div className="signin-signup ">
             <form className="sign-in-form" onSubmit={ handleSubmit }>

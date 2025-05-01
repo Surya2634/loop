@@ -214,7 +214,7 @@ const Dashboard = () => {
         <div className="footer-link d-flex justify-content-between mt-3">
           <div>
             <p className="font-weight-bolder">
-              Copyrights reserved to Loop @ 2022
+              Copyrights reserved to Loop @ 2025
             </p>
           </div>
           <div className="d-flex">
