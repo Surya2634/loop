@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import Chart from "react-apexcharts";
+// import Chart from "react-apexcharts";
 import "./AdminDashboard.css";
 import helperService from "../../../../services/helperService";
 import { AuthContext } from "../../../../contexts/AuthContext";
@@ -9,77 +9,77 @@ import adminStar from "../../../../images/admin-star.webp";
 import adminSubmission from "../../../../images/admin-submission.webp";
 
 // Enhanced Error Boundary
-class ErrorBoundary extends React.Component {
-  state = { hasError: false, errorInfo: null };
+// class ErrorBoundary extends React.Component {
+//   state = { hasError: false, errorInfo: null };
 
-  static getDerivedStateFromError(error) {
-    console.error('Chart Error:', error);
-    return { hasError: true };
-  }
+//   static getDerivedStateFromError(error) {
+//     console.error('Chart Error:', error);
+//     return { hasError: true };
+//   }
 
-  // In the ErrorBoundary component
-  componentDidCatch(error, info) {  // Keep 'error' parameter
-    console.error('Chart Error:', error);  // Now 'error' is used
-    console.log('Error Info:', info.componentStack);
-    this.setState({ errorInfo: info.componentStack });
-  }
+//   // In the ErrorBoundary component
+//   componentDidCatch(error, info) {  // Keep 'error' parameter
+//     console.error('Chart Error:', error);  // Now 'error' is used
+//     console.log('Error Info:', info.componentStack);
+//     this.setState({ errorInfo: info.componentStack });
+//   }
 
 
-  handleRetry = () => {
-    this.setState({ hasError: false, errorInfo: null });
-  };
+//   handleRetry = () => {
+//     this.setState({ hasError: false, errorInfo: null });
+//   };
 
-  render() {
-    if (this.state.hasError) {
-      return (
-        <></>
-      );
-    }
-    return this.props.children;
-  }
-}
+//   render() {
+//     if (this.state.hasError) {
+//       return (
+//         <></>
+//       );
+//     }
+//     return this.props.children;
+//   }
+// }
 
 const AdminDashboard = (props) => {
-  const [ totalCounts, setTotalCounts ] = useState({
+  const [totalCounts, setTotalCounts] = useState({
     users: 0,
     contests: 0,
     submissions: 0,
   });
 
-  const [ contestSubmissions, setContestSubmissions ] = useState({
-    options: {
-      chart: {
-        type: "area",
-        height: 350,
-        animations: {
-          enabled: false // Helps debug rendering issues
-        }
-      },
-      xaxis: {
-        categories: [],
-        labels: {
-          formatter: (value) => value.toString() // Force string conversion
-        }
-      },
-      yaxis: {
-        labels: {
-          formatter: (val) => val.toFixed(0),
-        },
-      },
-      title: {
-        text: "Total Contest Submissions",
-        align: "center",
-      },
-    },
-    series: [
-      {
-        name: "Submission Count",
-        data: [],
-      },
-    ],
-  });
+  // const [contestSubmissions, setContestSubmissions] = useState({
+  //   options: {
+  //     chart: {
+  //       type: "area",
+  //       height: 350,
+  //       animations: {
+  //         enabled: false // Helps debug rendering issues
+  //       }
+  //     },
+  //     xaxis: {
+  //       categories: [],
+  //       labels: {
+  //         formatter: (value) => value.toString() // Force string conversion
+  //       }
+  //     },
+  //     yaxis: {
+  //       labels: {
+  //         formatter: (val) => val.toFixed(0),
+  //       },
+  //     },
+  //     title: {
+  //       text: "Total Contest Submissions",
+  //       align: "center",
+  //     },
+  //   },
+  //   series: [
+  //     {
+  //       name: "Submission Count",
+  //       data: [],
+  //     },
+  //   ],
+  // });
 
-  const [ authState ] = useContext(AuthContext);
+  const [authState] = useContext(AuthContext);
 
   const fetchAdminDashboard = async () => {
     try {
@@ -137,22 +137,22 @@ const AdminDashboard = (props) => {
           throw new Error('Data length mismatch between contests and submissions');
         }
 
-        setContestSubmissions(prev => ({
-          ...prev,
-          options: {
-            ...prev.options,
-            xaxis: {
-              ...prev.options.xaxis,
-              categories: safeContests,
-            },
-          },
-          series: [
-            {
-              name: "Submission Count",
-              data: validatedCounts,
-            },
-          ],
-        }));
+        // setContestSubmissions(prev => ({
+        //   ...prev,
+        //   options: {
+        //     ...prev.options,
+        //     xaxis: {
+        //       ...prev.options.xaxis,
+        //       categories: safeContests,
+        //     },
+        //   },
+        //   series: [
+        //     {
+        //       name: "Submission Count",
+        //       data: validatedCounts,
+        //     },
+        //   ],
+        // }));
 
         setTotalCounts({
           contests: safeContests.length,
@@ -172,39 +172,39 @@ const AdminDashboard = (props) => {
 
   return (
     <div className="container-fluid dashboard-container">
-      {/* Main Content */ }
+      {/* Main Content */}
       <div className="dashboard-content">
         <div className="metrics-row">
-          {/* Users Card */ }
+          {/* Users Card */}
           <div className="metric-card">
             <div className="metric-content">
-              <h1>{ totalCounts.users }</h1>
+              <h1>{totalCounts.users}</h1>
               <span>Total Users</span>
             </div>
-            <img src={ adminUser } alt="Users" />
+            <img src={adminUser} alt="Users" />
           </div>
 
-          {/* Contests Card */ }
+          {/* Contests Card */}
           <div className="metric-card">
             <div className="metric-content">
-              <h1>{ totalCounts.contests }</h1>
+              <h1>{totalCounts.contests}</h1>
               <span>Total Contests</span>
             </div>
-            <img src={ adminStar } alt="Contests" />
+            <img src={adminStar} alt="Contests" />
           </div>
 
-          {/* Submissions Card */ }
+          {/* Submissions Card */}
           <div className="metric-card">
             <div className="metric-content">
-              <h1>{ totalCounts.submissions }</h1>
+              <h1>{totalCounts.submissions}</h1>
               <span>Total Submissions</span>
             </div>
-            <img src={ adminSubmission } alt="Submissions" />
+            <img src={adminSubmission} alt="Submissions" />
           </div>
         </div>
 
-        {/* Chart Section */ }
-        <div className="chart-section">
+        {/* Chart Section */}
+        {/* <div className="chart-section">
           <ErrorBoundary data={ contestSubmissions }>
             { contestSubmissions.series[ 0 ].data.length > 0 ? (
               <Chart
@@ -218,7 +218,7 @@ const AdminDashboard = (props) => {
               </div>
             ) }
           </ErrorBoundary>
-        </div>
+        </div> */}
       </div>
     </div>
   );
